@@ -7,6 +7,13 @@
   "author": "Raju Dandigam <raju0574@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js",
+    "debug": "nodemon --inspect src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
