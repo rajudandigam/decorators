@@ -7,10 +7,12 @@
   "author": "Raju Dandigam <raju0574@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "debug": "nodemon --inspect src/index.js"
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
     "nodemon": "^1.18.10"
   },
   "dependencies": {
